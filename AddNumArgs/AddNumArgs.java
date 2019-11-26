@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class AddNum {
+public class AddNumArgs {
 
   public int addNum (int numA, int numB) {
     return numA + numB;
@@ -14,10 +14,15 @@ public class AddNum {
   throws IOException
   {
     AddNum obj = new AddNum();
-    int ansSum = obj.addNum(1, 2);
+    //
+    //Need to check if args[] is empty
+    //Need to check if args[2] is empty, this is good
+    //Need to parse from strings to ... this becomes an algorithm
+    //
+    int ansSum = obj.addNum(args[0], args[1]);
     double ansDiv;
     try { //forcing division by zero, java.io has smrt response
-      ansDiv = obj.divideNum(4, 0);
+      ansDiv = obj.divideNum(args[0], args[1]);
       //Execution will not continue if error in above line
       System.out.println("Excellent, you have not divided by zero");
     } catch(Exception e) {
