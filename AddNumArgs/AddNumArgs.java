@@ -12,7 +12,7 @@ public class AddNumArgs {
 
   public static void main(String args[])
   throws ArrayIndexOutOfBoundsException
-  {
+  { //removed IOException so program would work
     try{ //ARGS[] required arguments
       int i=0;
       while (args[i] == "") {}
