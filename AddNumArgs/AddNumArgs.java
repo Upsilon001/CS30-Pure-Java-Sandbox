@@ -11,14 +11,25 @@ public class AddNumArgs {
   }
 
   public static void main(String args[])
-  throws IOException
+  throws ArrayIndexOutOfBoundsException
   {
-    AddNum obj = new AddNum();
+    try{ //ARGS[] required arguments
+      int i=0;
+      while (args[i] == "") {}
+          //
+    }
+    catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println ("\nYou must enter arguments, two numbers, to start the program.\n" +
+                          "Please restart the program with arguments. Thank-you\n");
+      System.exit(0);
+    }
+  //AddNum obj = new AddNum();
     //
     //Need to check if args[] is empty
     //Need to check if args[2] is empty, this is good
     //Need to parse from strings to ... this becomes an algorithm
     //
+    /*
     int ansSum = obj.addNum(args[0], args[1]);
     double ansDiv;
     try { //forcing division by zero, java.io has smrt response
@@ -33,5 +44,6 @@ public class AddNumArgs {
     System.out.println("\nSum of two numbers is: " + ansSum + "\n");
     System.out.println("\nDivision of two numbers is: " + ansDiv);
     //System.out.printf("%.2f", ansDiv);
+    */
   }
 }
