@@ -9,7 +9,7 @@ public class AddNumArgs {
   static float[] numFloat = new float[2];
   static String[] input = new String[2];
 
-  public int addNum (int numA, int numB) {
+  public long addNum (long numA, long numB) {
     return numA + numB;
   }
 
@@ -25,7 +25,7 @@ public class AddNumArgs {
       while (args[i] == "") {}
           //
     }
-    catch (ArrayIndexOutOfBoundsException e) {
+    catch (ArrayIndexOutOfBoundsException e1) {
       System.out.println ("\nYou must enter arguments, two numbers, to start the program.\n" +
                           "Please restart the program with arguments. Thank-you\n");
       System.exit(0);
@@ -37,29 +37,42 @@ public class AddNumArgs {
                          "Please enter only two numbers as arguments. Thank-you.\n");
       System.exit(0);
     }
-    catch (ArrayIndexOutOfBoundsException e) {//empty catch
+    catch (ArrayIndexOutOfBoundsException e2) {//empty catch
     }
     try {
       input[0] = args[0];
       input[1] = args[1];
       System.out.println("Congrats ... I am using your ARGS.");
     }
-    catch (ArrayIndexOutOfBoundsException e) {
+    catch (ArrayIndexOutOfBoundsException e3) {
       System.out.println("A serious error has occured in the algorithm.");
       System.exit(0);
     }
     try {
+      System.out.println("Let's see if you typed whole numbers ...");
+      numLong[0] = Long.parseLong(input[0]);
+      numLong[1] = Long.parseLong(input[1]);
+      //numInt[0] = Integer.parseInt(input[0]);
+    }
+    catch (NumberFormatException e4) {
+      try {
+        System.out.println("Let's see if you typed decimals ...");
+        numDouble[0] = Double.parseDouble(input[0]);
+        numDouble[1] = Double.parseDouble(input[1]);
+        //Float.parseFloat(input[0]);
+      }
+      catch (NumberFormatException e5) {
+        System.out.println("Looks like you didn't type a number.");
+      }
+    } //Long-Int Try
 
-    } catch (ArrayIndexOutOfBoundsException e) {}
-
-
-    //AddNumArgs obj = new AddNumArgs();
+    AddNumArgs obj = new AddNumArgs();
     //
     //Need to check if args[] is empty
     //Need to check if args[2] is empty, this is good
     //Need to parse from strings to ... this becomes an algorithm
     //
-    //int ansSum = obj.addNum(args[0], args[1]);
+    long ansSum = obj.addNum(numLong[0], numLong[1]);
     //double ansDiv;
     /*
     try { //forcing division by zero, java.io has smrt response
@@ -72,7 +85,7 @@ public class AddNumArgs {
       System.out.printf("%.2f", ansDiv);
     }
     */
-    //System.out.println("\nSum of two numbers is: " + ansSum + "\n");
+    System.out.println("\nSum of two numbers is: " + ansSum + "\n");
     //System.out.println("\nDivision of two numbers is: " + ansDiv);
     //System.out.printf("%.2f", ansDiv);
   }
