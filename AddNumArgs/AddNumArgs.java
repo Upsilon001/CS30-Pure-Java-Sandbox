@@ -73,7 +73,7 @@ public class AddNumArgs {
     //Need to parse from strings to ... this becomes an algorithm
     //
     long ansSum = obj.addNum(numLong[0], numLong[1]);
-    //double ansDiv;
+    double ansDiv = obj.divideNum(numDouble[0], numDouble[1]);;
     /*
     try { //forcing division by zero, java.io has smrt response
       ansDiv = obj.divideNum(args[0], args[1]);
@@ -85,8 +85,11 @@ public class AddNumArgs {
       System.out.printf("%.2f", ansDiv);
     }
     */
-    System.out.println("\nSum of two numbers is: " + ansSum + "\n");
-    //System.out.println("\nDivision of two numbers is: " + ansDiv);
-    //System.out.printf("%.2f", ansDiv);
+    System.out.println("\nYour whole numbers are: " + numLong[0] + " & " + numLong[1]);
+    System.out.println("\nYour decimal numbers are: " + numDouble[0] + " & " + numDouble[1]);
+    System.out.println("\nSum of two numbers is: " + ansSum);
+    System.out.println("\nDivision of two numbers is: " + ansDiv);
+    System.out.printf("%.2f", ansDiv);
+    System.out.println("\n");
   }
 }
