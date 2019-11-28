@@ -2,6 +2,13 @@ import java.io.*;
 
 public class AddNumArgs {
 
+  //Global Variables for ARGS
+  static long[] numLong = new long[2];
+  static int[] numInt = new int[2];
+  static double[] numDouble = new double[2];
+  static float[] numFloat = new float[2];
+  static String[] input = new String[2];
+
   public int addNum (int numA, int numB) {
     return numA + numB;
   }
@@ -32,13 +39,27 @@ public class AddNumArgs {
     }
     catch (ArrayIndexOutOfBoundsException e) {//empty catch
     }
-    AddNum obj = new AddNum();
+    try {
+      input[0] = args[0];
+      input[1] = args[1];
+      System.out.println("Congrats ... I am using your ARGS.");
+    }
+    catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println("A serious error has occured in the algorithm.");
+      System.exit(0);
+    }
+    try {
+
+    } catch (ArrayIndexOutOfBoundsException e) {}
+
+
+    //AddNumArgs obj = new AddNumArgs();
     //
     //Need to check if args[] is empty
     //Need to check if args[2] is empty, this is good
     //Need to parse from strings to ... this becomes an algorithm
     //
-    int ansSum = obj.addNum(args[0], args[1]);
+    //int ansSum = obj.addNum(args[0], args[1]);
     //double ansDiv;
     /*
     try { //forcing division by zero, java.io has smrt response
@@ -51,7 +72,7 @@ public class AddNumArgs {
       System.out.printf("%.2f", ansDiv);
     }
     */
-    System.out.println("\nSum of two numbers is: " + ansSum + "\n");
+    //System.out.println("\nSum of two numbers is: " + ansSum + "\n");
     //System.out.println("\nDivision of two numbers is: " + ansDiv);
     //System.out.printf("%.2f", ansDiv);
   }
