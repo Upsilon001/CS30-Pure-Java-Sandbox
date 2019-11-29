@@ -8,6 +8,7 @@ public class AddNumArgs {
   static double[] numDouble = new double[2];
   static float[] numFloat = new float[2];
   static String[] input = new String[2];
+  static Boolean[] inputBoolean = new Boolean[2];
   static Boolean keyDouble = false;
   static Boolean keyLong = false;
 
@@ -66,7 +67,20 @@ public class AddNumArgs {
         //Float.parseFloat(input[0]);
       }
       catch (NumberFormatException e5) {
-        System.out.println("Looks like you didn't type a number.");
+        System.out.println("Looks like you didn't type a number." +
+        "You might have typed a Boolean ... let's see.");
+        try {
+          //anything typed will equal a false Boolean
+          inputBoolean[0] = Boolean.parseBoolean(input[0]);
+          inputBoolean[1] = Boolean.parseBoolean(input[1]);
+          System.out.println("Looks like you typed two Booleans, " +
+          "But we cannot do anything with them yet.");
+          System.out.println("\nYour Booleans are: " + inputBoolean[0] + " & " + inputBoolean[1]);
+        }
+        catch (NumberFormatException e6) {
+          System.out.println("Actually, it looks like you just typed Strings");
+        }
+
       }
     } //Long-Int Try
 
