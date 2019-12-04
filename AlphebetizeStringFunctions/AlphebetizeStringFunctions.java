@@ -20,5 +20,8 @@ public class AlphebetizeStringFunctions {
     System.out.println(periodPositionB);
     String noPeriodlowerCaseMemAlphabet = lowerCaseMemAlphabet.substring(0, periodPositionI);
     System.out.println(noPeriodlowerCaseMemAlphabet);
+    //Create Substrings for all words
+    int word1space = noPeriodlowerCaseMemAlphabet.substring(" ");
+    System.out.println(word1space);
   }
 }
