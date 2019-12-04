@@ -21,7 +21,7 @@ public class AlphebetizeStringFunctions {
     String noPeriodlowerCaseMemAlphabet = lowerCaseMemAlphabet.substring(0, periodPositionI);
     System.out.println(noPeriodlowerCaseMemAlphabet);
     //Create Substrings for all words
-    int word1space = noPeriodlowerCaseMemAlphabet.substring(" ");
+    int word1space = noPeriodlowerCaseMemAlphabet.indexOf(" ");
     System.out.println(word1space);
   }
 }
