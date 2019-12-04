@@ -1,7 +1,7 @@
 public class AlphebetizeStringFunctions {
 
   //Global Variables
-  public static String alphabet = "  The quick brown fox jumps over the lazy dog.";
+  public static String alphabet = "  The  quick  brown fox jumps  over the  lazy dog.";
 
   public static void main (String[] args)
   {
@@ -33,7 +33,9 @@ public class AlphebetizeStringFunctions {
       word1True = false;
     }
     System.out.println(word1True);
+    String remainSentence = noPeriodlowerCaseMemAlphabet.substring(word1space, periodPositionI);
+    System.out.println(remainSentence);
+    //What happens if 2 spaces is the default for editting the separation between words
+    //Which functions and which variables need to be repeated to capture the rest of the words
   }
-  String remainSentence = noPeriodlowerCaseMemAlphabet.substring(word1space, periodPositionI),
-  System.out.println(remainSentence);
 }
