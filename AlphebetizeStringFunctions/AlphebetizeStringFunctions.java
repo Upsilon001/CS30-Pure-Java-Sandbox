@@ -25,5 +25,6 @@ public class AlphebetizeStringFunctions {
     System.out.println(word1space);
     String word1 = noPeriodlowerCaseMemAlphabet.substring(0, word1space+1);
     System.out.println(word1);
+    System.out.println( word1.length() );
   }
 }
