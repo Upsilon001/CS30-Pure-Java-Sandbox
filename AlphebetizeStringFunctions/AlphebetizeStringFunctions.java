@@ -32,6 +32,8 @@ public class AlphebetizeStringFunctions {
     } else {
       word1True = false;
     }
-    System.out.println( word1True );
+    System.out.println(word1True);
   }
+  String remainSentence = noPeriodlowerCaseMemAlphabet.substring(word1space, periodPositionI),
+  System.out.println(remainSentence);
 }
