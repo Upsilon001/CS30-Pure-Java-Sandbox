@@ -13,8 +13,11 @@ public class AlphebetizeStringFunctions {
     String lowerCaseMemAlphabet = memAlphabet.toLowerCase();
     System.out.println(lowerCaseMemAlphabet);
     //Find the end of the sentence, limited to periods
-    int periodPosition = lowerCaseMemAlphabet.indexOf(".");
-    System.out.println(periodPosition);
+    int periodPositionI = lowerCaseMemAlphabet.indexOf(".");
+    System.out.println(periodPositionI);
+    String periodPositionS = lowerCaseMemAlphabet.substring(periodPositionI, periodPositionI+1);
+    Boolean periodPositionB = periodPositionS.equals(".");
+    System.out.println(periodPositionB);
 
     //String noPeriodlowerCaseMemAlphabet
 
