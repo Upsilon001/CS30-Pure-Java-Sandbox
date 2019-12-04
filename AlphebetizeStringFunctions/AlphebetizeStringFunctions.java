@@ -23,7 +23,7 @@ public class AlphebetizeStringFunctions {
     //Create Substrings for all words
     int word1space = noPeriodlowerCaseMemAlphabet.indexOf(" ");
     System.out.println(word1space);
-    String word1 = noPeriodlowerCaseMemAlphabet.substring(word1space, word1space+1);
+    String word1 = noPeriodlowerCaseMemAlphabet.substring(0, word1space+1);
     System.out.println(word1);
   }
 }
