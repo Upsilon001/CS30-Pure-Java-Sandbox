@@ -26,5 +26,12 @@ public class AlphebetizeStringFunctions {
     String word1 = noPeriodlowerCaseMemAlphabet.substring(0, word1space);
     System.out.println(word1);
     System.out.println( word1.length() );
+    Boolean word1True;
+    if ( word1space == word1.length() ) {
+      word1True = true;
+    } else {
+      word1True = false;
+    }
+    System.out.println( word1True );
   }
 }
