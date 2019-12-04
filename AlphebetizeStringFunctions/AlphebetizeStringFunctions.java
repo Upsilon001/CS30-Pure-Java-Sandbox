@@ -12,5 +12,8 @@ public class AlphebetizeStringFunctions {
     //Modify for lowercase
     String lowerCaseMemAlphabet = memAlphabet.toLowerCase();
     System.out.println(lowerCaseMemAlphabet);
+    //Find the end of the sentence, limited to periods
+    String noPeriodlowerCaseMemAlphabet = lowerCaseMemAlphabet.indexOf(".");
+
   }
 }
