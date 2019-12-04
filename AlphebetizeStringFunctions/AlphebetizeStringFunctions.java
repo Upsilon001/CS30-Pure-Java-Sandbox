@@ -18,8 +18,7 @@ public class AlphebetizeStringFunctions {
     String periodPositionS = lowerCaseMemAlphabet.substring(periodPositionI, periodPositionI+1);
     Boolean periodPositionB = periodPositionS.equals(".");
     System.out.println(periodPositionB);
-
-    //String noPeriodlowerCaseMemAlphabet
-
+    String noPeriodlowerCaseMemAlphabet = lowerCaseMemAlphabet.substring(0, periodPositionI);
+    System.out.println(noPeriodlowerCaseMemAlphabet);
   }
 }
