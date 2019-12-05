@@ -50,6 +50,8 @@ public class AlphebetizeStringFunctions {
     String word3 = remainSentence.substring(0, word3space);
     //
     System.out.println("The third word is " + word3);
+    // Fourth Word
+
     //What happens if 2 spaces is the default for editting the separation between words
     //Which functions and which variables need to be repeated to capture the rest of the words
   }
