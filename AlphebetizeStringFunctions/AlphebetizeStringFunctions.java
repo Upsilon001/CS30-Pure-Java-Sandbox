@@ -43,7 +43,9 @@ public class AlphebetizeStringFunctions {
     String word2 = remainSentence.substring(0, word2space);
     System.out.println(word2);
     //Third Word
-    remainSentence = remainSentence.substring(word2space, periodPositionI);remainSentence = remainSentence.trim();
+    periodPositionI = periodPositionI - word2space;
+    remainSentence = remainSentence.substring(word2space, periodPositionI);
+    remainSentence = remainSentence.trim();
     int word3space = remainSentence.indexOf(" ");
     String word3 = remainSentence.substring(0, word3space);
     //
