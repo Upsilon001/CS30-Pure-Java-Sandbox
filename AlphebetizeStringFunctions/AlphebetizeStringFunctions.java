@@ -35,6 +35,10 @@ public class AlphebetizeStringFunctions {
     System.out.println(word1True);
     String remainSentence = noPeriodlowerCaseMemAlphabet.substring(word1space, periodPositionI);
     System.out.println(remainSentence);
+    //Second Word
+    System.out.println("\nSecond Word\n");
+    int word2space = remainSentence.indexOf(" ");
+    System.out.println(word2space);
     //What happens if 2 spaces is the default for editting the separation between words
     //Which functions and which variables need to be repeated to capture the rest of the words
   }
