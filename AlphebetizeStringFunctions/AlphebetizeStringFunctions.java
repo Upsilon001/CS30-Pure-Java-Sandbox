@@ -42,6 +42,12 @@ public class AlphebetizeStringFunctions {
     System.out.println(word2space);
     String word2 = remainSentence.substring(0, word2space);
     System.out.println(word2);
+    //Third Word
+    remainSentence = remainSentence.trim();
+    int word3space = remainSentence.indexOf(" ");
+    String word3 = remainSentence.substring(0, word3space);
+    //
+    System.out.println("The third word is " + word3);
     //What happens if 2 spaces is the default for editting the separation between words
     //Which functions and which variables need to be repeated to capture the rest of the words
   }
