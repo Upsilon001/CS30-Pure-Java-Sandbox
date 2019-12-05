@@ -40,7 +40,7 @@ public class AlphebetizeStringFunctions {
     remainSentence = remainSentence.trim();
     int word2space = remainSentence.indexOf(" ");
     System.out.println(word2space);
-    int word2 = remainSentence.substring(word2space, word2space+1);
+    String word2 = remainSentence.substring(word2space, word2space+1);
     System.out.println(word2);
     //What happens if 2 spaces is the default for editting the separation between words
     //Which functions and which variables need to be repeated to capture the rest of the words
