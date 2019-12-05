@@ -37,6 +37,7 @@ public class AlphebetizeStringFunctions {
     System.out.println(remainSentence);
     //Second Word
     System.out.println("\nSecond Word\n");
+    remainSentence = remainSentence.trim();
     int word2space = remainSentence.indexOf(" ");
     System.out.println(word2space);
     //What happens if 2 spaces is the default for editting the separation between words
