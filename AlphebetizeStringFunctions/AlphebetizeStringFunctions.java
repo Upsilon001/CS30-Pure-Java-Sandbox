@@ -51,7 +51,7 @@ public class AlphebetizeStringFunctions {
     //
     System.out.println("The third word is " + word3);
     // Fourth Word
-
+    //
     //What happens if 2 spaces is the default for editting the separation between words
     //Which functions and which variables need to be repeated to capture the rest of the words
   }
